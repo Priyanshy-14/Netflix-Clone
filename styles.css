@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.logo{
+    
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.logo-size{
+    height: 250px;
+    position: relative;
+    top: -70px;
+    left: 160px;
+
+}
+.actions {
+  display: flex;
+  gap: 10px; /* Space between dropdown and button */
+  align-items: center;
+  margin-right: 50px;
+}
+
+
+.home{
+    min-height: 680px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/main_bg.jpg');
+
+}
+.sign_in{
+    height: 30px;
+    border-radius: 8px 8px 8px 8px;
+    position: relative;
+    right: 70px;
+    top: -60px;
+}
+
+#select{
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px ;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+#btn{
+    width: 90px;
+    background-color:rgba(231,7,18,255);
+    color: rgb(255, 255, 255);
+    border: solid 0.2px rgba(231,7,18,255) ;
+    text-align: center;
+    font-size: 15px;
+}
+.main_text{
+    border: solid 1px white;
+    position: fixed;
+    left: 520px;
+    width: 500px;
+    height: 300px;
+}
