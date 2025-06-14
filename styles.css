@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #000;
+}
 nav{
     width: 100%;
     display: flex;
     justify-content: space-between;  
 }
 header{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/main_bg.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/main_bg.jpg');
 
 
 }
@@ -20,7 +26,7 @@ header{
 }
 
 .logo-size{
-    height: 250px;
+    height: 200px;
     position: relative;
     top: -70px;
     left: 160px;
@@ -66,7 +72,7 @@ header{
     font-size: 15px;
 }
 .landing{
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -84,6 +90,7 @@ header{
 }
 .inner{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 .inner h1{
     font-size: 55px;
@@ -92,19 +99,18 @@ header{
 .inner h6{
     font-size: 18px;
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 .inner p{
     font-size: 13px;
     margin-top: 18px;
-    margin-left: 5px;
 }
 .inner input{
     
     background-color: transparent;
     margin-top: 10px;
-    height: 40px;
+    height: 50px;
     width: 270px;
     margin-left:-15px ;
     border: 1.5px solid rgb(198, 189, 189);
@@ -118,7 +124,7 @@ header{
 .inner button{
     background-color:rgba(231,7,18,255) ;
     margin-top: 10px;
-    height: 40px;
+    height: 50px;
     width: 170px;
     border: 1.5px solid rgba(231,7,18,255) ;
     border-radius: 4px;
@@ -127,3 +133,76 @@ header{
     font-size: 15px;
     
 }
+
+.curved-wrapper{
+    min-height: 1000px;
+    background: linear-gradient(to bottom,#0d0d2e, #000,#0d0d2e);
+
+}
+
+.curved-section {
+   border-top: 5px solid transparent; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  width: 100vw;
+  justify-self: center;
+  z-index: 1;
+  top: -30px;
+  justify-content: center;
+  overflow: visible;
+  
+}
+
+.curved-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; 
+  background: linear-gradient(to right, #ff0055, #c92d2d);
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+ 
+  clip-path: inset(50% 0 0 0);
+  z-index: 10;
+}
+
+.section-title {
+  text-align: start;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+
+}
+
+.trending{
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-start;
+     box-sizing: border-box;
+}
+
+.mov{
+    margin-top: 120px;
+    height: 150px;
+    width: 100px;
+    border : solid 2px white;
+    margin-right: 30px;
+    
+}
+/*
+.curved-divider {
+  width: 100vw;
+  height: 10px; 
+  background: linear-gradient(to right, #ff0055, #c72121);
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  clip-path: ellipse(150% 100% at 50% 0%);
+
+  margin: 0 auto;
+}
+*/
