@@ -141,19 +141,10 @@ header{
 }
 
 .curved-section {
-   border-top: 5px solid transparent; 
-  display: flex;
-  align-items: center;
   position: relative;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  width: 100vw;
-  justify-self: center;
-  z-index: 1;
-  top: -30px;
-  justify-content: center;
+  height: 40px;
   overflow: visible;
-  
+  background: transparent;
 }
 
 .curved-section::before {
@@ -162,16 +153,15 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  height: 10px; 
+  height: 10px;
   background: linear-gradient(to right, #ff0055, #c92d2d);
-  border-top-left-radius: 50% 100%;
-  border-top-right-radius: 50% 100%;
- 
-  clip-path: inset(50% 0 0 0);
-  z-index: 10;
+  border-radius: 50% / 100%;
+  transform: scaleX(100); 
+  transform-origin: center;
 }
 
 .section-title {
+    margin-left: 130px;
   text-align: start;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -180,29 +170,49 @@ header{
 }
 
 .trending{
+
+    margin-left: 12px;
     display: flex;
     margin-top: 0;
-    justify-content: flex-start;
+    justify-content: center;
      box-sizing: border-box;
 }
 
 .mov{
-    margin-top: 120px;
-    height: 150px;
-    width: 100px;
-    border : solid 2px white;
-    margin-right: 30px;
     
+    margin-top: 30px;
+    height: 260px;
+    width: 200px;
+    border : solid 2px transparent;
+    margin-right: 30px;
+    border-radius: 20px;
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-/*
-.curved-divider {
-  width: 100vw;
-  height: 10px; 
-  background: linear-gradient(to right, #ff0055, #c72121);
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  clip-path: ellipse(150% 100% at 50% 0%);
 
-  margin: 0 auto;
+#mov1{
+    background-image: url(/assets/mov1.jpg);
+    background-size: cover;
 }
-*/
+
+#mov2{
+    background-image: url(/assets/mov2.jpeg);
+    background-size: cover;
+}
+#mov3{
+    background-image: url(/assets/mov3.jpg);
+    background-size: cover;
+}
+#mov4{
+    background-image: url(/assets/mov4.jpeg);
+    background-size: cover;
+}
+#mov5{
+    background-image: url(/assets/mov5.jpeg);
+    background-size: cover;
+}
+#mov6{
+    background-image: url(/assets/mov6.jpeg);
+    background-size: cover;
+}
