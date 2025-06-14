@@ -186,20 +186,20 @@ header{
     border : solid 2px transparent;
     margin-right: 30px;
     border-radius: 20px;
-  font-family: "Londrina Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  color: white;
-  position: relative;
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 100px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+
 }
 .mov::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4); /* semi-transparent dark overlay */
-    border-radius: 20px;
     z-index: 1;
 }
 
@@ -207,13 +207,12 @@ header{
     background-image: url(/assets/mov1.jpg);
     background-size: cover;
 }
-
 #mov2{
-    background-image: url(/assets/mov2.jpeg);
+    background-image: url(/assets/sts.webp);
     background-size: cover;
 }
 #mov3{
-    background-image: url(/assets/mov3.jpg);
+    background-image: url(/assets/suits.jpeg);
     background-size: cover;
 }
 #mov4{
@@ -227,4 +226,15 @@ header{
 #mov6{
     background-image: url(/assets/mov6.jpeg);
     background-size: cover;
+}
+
+#mov1 h3,
+#mov2 h3,
+#mov3 h3,
+#mov4 h3,
+#mov5 h3,
+#mov6 h3{
+    margin-left: -15px;
+    margin-bottom: -15px;
+    
 }
