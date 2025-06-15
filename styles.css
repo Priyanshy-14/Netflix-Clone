@@ -155,7 +155,7 @@ header{
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, #ff0055, #c92d2d);
+  background: linear-gradient(to right, #bb1e52, #a11313);
   transform: scaleX(100); 
   transform-origin: center;
   border-top-left-radius: 50% 100%;
@@ -163,6 +163,7 @@ header{
 
 
 }
+
 
 .section-title {
     margin-left: 130px;
@@ -309,4 +310,98 @@ header{
     padding: 10px 15px 12px 20px ;   
     color: rgb(161, 151, 151);
  
+}
+
+.question-title{
+  margin-left: 130px;
+  text-align: start;
+  color: white;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+}
+.questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.que{
+    color: white;
+    width: 82%;
+    height: 100px;
+    border: 2px solid transparent;
+    margin-bottom: 12px;
+    background-color: #2d2d2d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.que:hover{
+    background-color: #414141;
+}
+
+
+
+.plus-sign{
+    font-size: 32px;
+    cursor: pointer;
+    padding-right: 10px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.login-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-area p{
+    font-size: 20px;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.login-area input{
+    
+    background-color: transparent;
+    margin-top: 10px;
+    height: 60px;
+    width: 500px;
+    margin-left:-15px ;
+    border: 1.5px solid rgb(198, 189, 189);
+    border-radius: 4px;
+    color: rgb(237, 235, 235);
+    padding-left: 10px;
+    font-size: 23px;
+    margin-right: 6px;
+
+}
+
+.login-area button{
+    background-color:rgba(231,7,18,255) ;
+    margin-top: 10px;
+    height: 60px;
+    width: 240px;
+    border: 2px solid rgba(231,7,18,255) ;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    
 }
