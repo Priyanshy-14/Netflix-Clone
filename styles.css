@@ -419,11 +419,13 @@ footer{
     margin-right: 200px;
 }
 
-.links{
-    align-items: center;
-    justify-content: space-between;
-
+.links {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              
+    align-items: flex-start; 
 }
+
 
 .links a{
     color: #414141;
