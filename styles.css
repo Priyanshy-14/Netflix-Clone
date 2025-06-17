@@ -410,3 +410,21 @@ footer{
     min-height: 400px;
     background-color: black;
 }
+
+.lasttt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.links{
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.links a{
+    color: #414141;
+}
